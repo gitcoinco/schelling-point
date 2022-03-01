@@ -241,7 +241,7 @@ main {
     width: 518px
 }
 
-.schelling-hero-description .subtitle, .cta-hero-box .subtitle, {
+.schelling-hero-description .subtitle, .cta-hero-box .subtitle{
     font-family: Miriam Libre;
     font-style: normal;
     font-weight: normal;
@@ -249,7 +249,7 @@ main {
     line-height: 63px;
     color: #0E0333;
 }
-.schelling-hero-description .subtitle2, .subittle-guide {
+.schelling-hero-description .subtitle2 {
     font-family: Miriam Libre;
     font-style: normal;
     font-weight: normal;
