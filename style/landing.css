@@ -57,14 +57,137 @@ body {
     #hero-version-2 {
     }
 
-    .img_back{
+    /* .img_back{
     
     position: absolute;
     width: 75%;
     height:75%;
-    }
+    } */
     
 
+}
+.coordination-keys {
+    color:#6F3FF5;
+    font-weight: bold;
+    font-family: 'Libre Franklin';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+.coordination-keys a {
+    color:#6F3FF5;
+}
+
+.green-symbol {
+    color:#02E2AC;
+    font-weight: 900;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.amsterdam-hero {
+    background: url('../image/banner-amsterdam.png');
+    width: 1900px;
+    height: 515px;
+    left: 0px;
+    top: 133px;
+
+}
+
+.amsterdam-hero-box {
+    margin-left: 227px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.amsterdam-hero-box .title{
+    margin-top: 139px;
+    margin-bottom: 24px;
+    width: 400px;
+    height: 92px;
+    left: 227px;
+    top: 272px;
+
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 96.1%;
+    /* or 46px */
+
+
+    color: #5BF1CD;
+}
+.amsterdam-hero-box .subtitle{
+    margin-bottom: 24px;
+    
+    width: 391px;
+    height: 32px;
+    left: 227px;
+    top: 388px;
+
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+.amsterdam-hero-box button{
+    background-color: #ffffff;
+    color: #0E0333;
+    border-radius: 8px;
+    margin-bottom: 139px;
+}
+
+#banner-news {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: #5BF1CD;
+    padding: 20px;
+}
+
+#banner-news .title {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center;
+    
+    color: #6F3FF5;
+}
+
+#banner-news button {
+    background: #6F3FF5;
+    color: #fff;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+#banner-news .button-box {
+    margin: 16px 0 ;
+    margin-left: 603px;
+    align-items: flex-end;
+}
+
+#banner-news .title-box {
+    margin-top: 26px;
+    margin-left: 221px;
+    align-items: flex-start;
+}
+
+#banner-news .cta-button {
+    margin: 0;
+    text-transform: none;
 }
 
 .agenda-container {
@@ -149,6 +272,7 @@ nav.schelling-nav ul li a:after {
     margin-bottom: -10px;
 }
 .greenpill p.description{
+    font-family: 'Lib';
     background-color: green;
     max-width: 25% !important;
     color: white;
@@ -681,7 +805,7 @@ footer {
 
 .description {
     max-width: 700px;
-    font-family: Montserrat;
+    font-family: Libre Franklin;
     font-size: 22px;
     line-height: 160%;
 
@@ -834,10 +958,8 @@ hr {
 }
 
 .img_back{
-    
-    position: absolute;
-    z-index: -9999;
-    width: 50%;
+    /* position: absolute; */
+    /* z-index: -9999; */
 }
 
 #hero-version-2 {
@@ -963,11 +1085,11 @@ hr {
         background-size: 414px;
     }
 
-    .img_back{
+    /* .img_back{
         position: absolute;
         width: 75%;
         height:75%;
-    }
+    } */
     .cta-buttons {
        margin:auto;
     }
@@ -1059,3 +1181,4 @@ tr:first-child{
     color: white;
     text-decoration: underline;
 }
+
