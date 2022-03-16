@@ -1251,7 +1251,8 @@ hr {
     .amsterdam-hero-box .title  {
         margin-bottom: 0;
         margin-top: 42px;
-        line-height: normal;
+        line-height: 19.22px;
+        font-size: 20px;
     }
     
     .amsterdam-hero-box button {
@@ -1266,8 +1267,10 @@ hr {
     }
 
     .amsterdam-hero {
-        background: url('../image/hero-mobile-Image.png') no-repeat #6F3FF5;    
-    }
+        background: url('../image/hero-mobile-Image.png') no-repeat #6F3FF5;
+        width: auto;
+        height: auto;
+    }    
     
     #banner-news .cta-button {
         width: 116px;
