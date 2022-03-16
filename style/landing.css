@@ -1234,10 +1234,6 @@ hr {
         margin: 20px;
     }
 
-    .schelling-nav {
-        display: none;
-    }
-
     .amsterdam-hero-box {
         margin-left: 37px;
     }
@@ -1381,9 +1377,47 @@ tr:first-child{
         display: initial;
         position: absolute;
         cursor: pointer;
-        margin-top: 30px;
+        margin-bottom: 20px;
         font-size: 40px;
         margin-right: 26px;
     }
+
+    .navbar, .nav-item {
+        flex-direction: column;
+    }
+    .navbar__ToggleShow {
+        display: flex;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .nav-item.navbar__ToggleShow {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        display: none;
+    }
+    
+    .nav-item a {
+      display: inline-block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #0E0333;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    
+    .nav-item:hover a {
+      color: #02E2AC;
+    
+    }
 }
+
 

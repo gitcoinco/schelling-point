@@ -45,54 +45,17 @@
                     <img src="./image/logo-amesterdam.jpg" alt="schelling point" />
                 </a>
             </h1>
+            
+            <!-- end brand/logo -->
             <div class="nav-toggle">
                 <i class="fas fa-bars"></i>
               </div>
-            <!-- end brand/logo -->
-            <nav class="schelling-nav">
-                <ul class="header-nav-menu text-menu">
-                    <li>
-                        <a class="link-landing" href="#the-conference" data-kinetics-attraction=""
-                            data-kinetics-attraction-chance=".5" data-kinetics-attraction-grow="1"
-                            data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="0.3">
-                            About</a>
-
-                    </li>
-                    <li>
-                        <a class="link-landing" href="#speakers" data-kinetics-attraction=""
-                            data-kinetics-attraction-chance=".5" data-kinetics-attraction-grow="1"
-                            data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="0.3">
-                            Speakers</a>
-                    </li>
-                    <li>
-                        <a class="link-landing" href="#sponsors" data-kinetics-attraction=""
-                            data-kinetics-attraction-chance=".5" data-kinetics-attraction-grow="1"
-                            data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="0.3">
-
-                            Sponsors</a>
-                    </li>
-                    <li>
-                        <a class="link-landing" href="#agenda" data-kinetics-attraction=""
-                            data-kinetics-attraction-chance=".5" data-kinetics-attraction-grow="1"
-                            data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="0.3">
-
-                            Agenda</a>
-                    </li>
-                    <li>
-                        <a class="link-landing" href="#afterparty" data-kinetics-attraction=""
-                            data-kinetics-attraction-chance=".5" data-kinetics-attraction-grow="1"
-                            data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="0.3">
-                            Afterparty</a>
-                    </li>
-                    <li>
-                        <a class="link-landing" href="https://t.me/joinchat/EX2vtzI0earU2LER"
-                            data-kinetics-attraction="" data-kinetics-attraction-chance=".5"
-                            data-kinetics-attraction-grow="1" data-kinetics-attraction-type="drone"
-                            data-kinetics-attraction-radius="0.3">
-                            Telegram Group</a>
-                    </li>
+              <nav class="schelling-nav">
+                <ul class="nav-links header-nav-menu text-menu" id="nav-schelling">
                 </ul>
-            </nav>
+              </nav>
+            
+            
         </header>
     </section>
     <section class="amsterdam-hero">
@@ -308,74 +271,6 @@
     gtag('js', new Date());
 
     gtag('config', 'G-1SJM4RCCGP');
-</script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-        const params = {
-            "debug": false,
-            "spring": {
-                "tension": 8,
-                "friction": 10,
-                "randomTension": 50,
-                "randomFriction": -18,
-                "extendedRestDelay": 50
-            },
-            "canvas": {
-                "handlePosition":
-            },
-            "particles": {
-                "count": 24,
-                "sides": {
-                    "min": 3,
-                    "max": 5
-                },
-                "sizes": {
-                    "min": 5,
-                    "max": 10
-                },
-                "rotate": {
-                    "speed": 1,
-                    "direction": null
-                },
-                "mode": {
-                    "type": "linear",
-                    "speed": 1,
-                    "boundery": "endless"
-                },
-                "parallex": {
-                    "layers": 3,
-                    "speed": 0.15
-                },
-                "attract": {
-                    "chance": 0.5,
-                    "force": 1,
-                    "grow": 2,
-                    "size": null,
-                    "type": "static",
-                    "speed": 1.5,
-                    "direction": -1,
-                    "radius": 1
-                },
-                "fill": {
-                    "colors": ["#87dfe1", "#6F3FF5", "#ade7a7"],
-                    "toColors": ["#87dfe1", "#6F3FF5", "#ade7a7"],
-                    "opacity": 1
-                },
-                "stroke": {
-                    "colors": [],
-                    "toColors": [],
-                    "width": [],
-                    "opacity": 1
-                },
-
-            }
-        };
-
-        const kinetics = new Kinetics(params).interactionHook();
-
-    });
 </script>
 <script>
    const spearkersJson = [
@@ -898,5 +793,67 @@
     document.getElementById('sponsors-list').innerHTML = sponserRender;
 </script>
 
+<script>
+    function classToggle() {
+      const navs = document.querySelectorAll('.nav-item')
+      navs.forEach(nav => nav.classList.toggle('navbar__ToggleShow'));
+      console.log(navs.length)
+    }
+  
+    document.querySelector('.nav-toggle')
+      .addEventListener('click', classToggle);
+  </script>
+
+<!-- menu builder -->
+<script>
+    const navLinks = [{
+      "eventLinks": [
+        {
+          title: "About",
+          link: "#the-conference",
+        },
+        {
+          title: "Speakers",
+          link:  "#speakers",
+        },
+        {
+          title: "Sponsors",
+          link: "#sponsors",
+        },
+        {
+          title: "Agenda",
+          link: "#agenda",
+        },
+        {
+          title: "Afterparty",
+          link: "#afterparty",
+        },
+        {
+          title: "Telegram Group",
+          link: "https://t.me/joinchat/EX2vtzI0earU2LER",
+        }
+      ]
+    }];
+  
+    let navRender = '';
+  
+    navLinks.forEach(function (element) {
+      let nav = element.eventLinks
+  
+      nav.forEach(function (route) {
+        navRender += ` 
+                <li class="nav-item">
+                <a class="link-landing"  href="${route.link}" data-kinetics-attraction=""
+                data-kinetics-attraction-chance=".5" data-kinetics-attraction-grow="1"
+                data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="0.3">
+                ${route.title}</a>
+                </li>
+                `
+  
+      })
+      navRender += '<br />'
+    })
+    document.getElementById('nav-schelling').innerHTML = navRender;
+  </script>
 
 <script src="https://unpkg.com/@drum-n-bass/kinetics"></script>
