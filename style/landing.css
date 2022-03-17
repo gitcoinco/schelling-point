@@ -18,7 +18,7 @@ html {
 }
 .black_under{
     color: black;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     text-align: center;
     font-family: Montserrat;
 }
@@ -60,7 +60,7 @@ body {
     font-family: Libre Franklin;
     font-style: normal;
     font-weight: normal;
-    font-size: 26px;
+    font-size:1.625rem;
     line-height: 32px;      
     color: #FFFFFF;
 }
@@ -132,8 +132,8 @@ body {
     color:#6F3FF5;
     font-weight: bold;
     font-family: 'Libre Franklin';
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
     font-size: 1.6rem;
 }
 .coordination-keys a {
@@ -159,7 +159,7 @@ body {
     display: flex;
     flex-direction: row;
     background: #5BF1CD;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 #banner-news .title {
@@ -191,7 +191,7 @@ body {
 }
 
 #banner-news .title-box {
-    margin-top: 26px;
+    margin-top:1.625rem;
     margin-left: 191px;
     align-items: flex-start;
 }
@@ -204,8 +204,8 @@ body {
     color:#6F3FF5;
     font-weight: bold;
     font-family: 'Libre Franklin';
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
     font-size: 1.6rem;
 }
 .coordination-keys a {
@@ -220,8 +220,8 @@ body {
 }
 .amsterdam-hero {
     background: url('../image/banner-amsterdam.png');
-    width: 1900px;
-    height: 515px;
+    width: 118.75rem;
+    height: 32.188rem;
     left: 0px;
     top: 133px;
 
@@ -263,7 +263,7 @@ body {
     font-family: Libre Franklin;
     font-style: normal;
     font-weight: normal;
-    font-size: 26px;
+    font-size:1.625rem;
     line-height: 32px;
     /* identical to box height */
 
@@ -282,7 +282,7 @@ body {
     display: flex;
     flex-direction: row;
     background: #5BF1CD;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 #banner-news .title {
@@ -314,7 +314,7 @@ body {
 }
 
 #banner-news .title-box {
-    margin-top: 26px;
+    margin-top:1.625rem;
     margin-left: 221px;
     align-items: flex-start;
 }
@@ -429,7 +429,7 @@ nav.schelling-nav ul li a:hover:after {
 .link-landing {
     outline: none;
     cursor: pointer;
-    padding: 20px;
+    padding: 1.25rem;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -474,8 +474,8 @@ main {
 
 
 .hero-image {
-    width: 420px;
-    height: 420px;
+    width: 41.25rem;
+    height: 41.25rem;
     margin-left: 30px;
 }
 
@@ -608,7 +608,7 @@ Bubble */
 
 .bubble.violet.bottom.right {
     align-self: end;
-    bottom: 20px;
+    bottom: 1.25rem;
     left: 0;
 }
 
@@ -654,14 +654,14 @@ Bubble */
 
 .bubble.yellow.bottom.left {
     align-self: end;
-    right: -20px;
+    right: -1.25rem;
     bottom: 80px;
 }
 
 .bubble.teal.top.left {
     align-self: baseline;
     right: 0;
-    bottom: 20px;
+    bottom: 1.25rem;
 }
 
 .bubble.teal.top.right {
@@ -886,7 +886,7 @@ Bubble */
 .image-sponsors {
     width: 182px;
     height: 182px;
-    padding: 20px;
+    padding: 1.25rem;
     justify-content: center;
     display: flex;
 }
@@ -983,7 +983,7 @@ footer {
 
 .button-call-to-action {
     width: 640px;
-    height: 120px;
+    height: 11.25rem;
     border-radius: 8px;
     background: #6F3FF5;
     color: white;
@@ -994,7 +994,7 @@ footer {
     font-size: 36px;
     line-height: 47px;
     border-color: transparent;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     cursor:pointer;
 }
 
@@ -1011,7 +1011,7 @@ footer {
     font-size: 16px;
     line-height: 47px;
     border-color: transparent;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     cursor:pointer;
     
 
@@ -1022,7 +1022,7 @@ footer {
 }
 
 .cta-hero-box {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .button-call-to-action:hover {
@@ -1166,7 +1166,7 @@ hr {
     }
 
     .sponsors-list {
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .sponsors-list li:nth-child(2) {
@@ -1231,7 +1231,7 @@ hr {
     }
 
     #banner-news .button-box {
-        margin: 20px;
+        margin: 1.25rem;
     }
 
     .amsterdam-hero-box {
@@ -1246,9 +1246,9 @@ hr {
 
     .amsterdam-hero-box .title  {
         margin-bottom: 0;
-        margin-top: 42px;
+        margin-top: 2.625rem;
         line-height: 19.22px;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     
     .amsterdam-hero-box button {
@@ -1256,16 +1256,16 @@ hr {
     }
 
     .amsterdam-hero-box .cta-button {
-        width: 90px;
-        height: 32px;
+        width: 5.625rem;
+        height: 2rem;
         font-size: 12px;
         line-height: 14px;
     }
 
     .amsterdam-hero {
         background: url('../image/hero-mobile-Image.png') no-repeat #6F3FF5;
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
     }    
     
     #banner-news .cta-button {
@@ -1275,6 +1275,17 @@ hr {
         line-height: 14px;
         font-family: 'Libre Franklin';
         color: #fff;
+    }
+
+    .header-box {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .navbar-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
    
 }
@@ -1309,7 +1320,7 @@ hr {
     }
 
     .section-conainer_info .description {
-        padding: 20px;
+        padding: 1.25rem;
     }
 
     .button-call-to-action {
@@ -1377,9 +1388,9 @@ tr:first-child{
         display: initial;
         position: absolute;
         cursor: pointer;
-        margin-bottom: 20px;    
+        margin-bottom: 1.25rem;    
         font-size: 40px;
-        margin-right: 26px;
+        margin-right:1.625rem;
     }
 
     .navbar, .nav-item {
