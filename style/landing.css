@@ -1377,7 +1377,7 @@ tr:first-child{
         display: initial;
         position: absolute;
         cursor: pointer;
-        margin-bottom: 20px;
+        margin-bottom: 20px;    
         font-size: 40px;
         margin-right: 26px;
     }
